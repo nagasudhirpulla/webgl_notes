@@ -5,8 +5,8 @@ Refer
 2. https://webglfundamentals.org/webgl/lessons/webgl-fundamentals.html - 
 You can even find handy functions to initialise webgl shaders, programs, uniforms, buffers, attributes, rendering etc
 
-### Steps to draw a basic triangle
-1. Get the webgl context from the html5 canvas element in the index.html page 
+### Steps to draw a basic triangle by just drawing arrays
+1. Get the webgl context from the html5 canvas element in the index.html page and clearColor, clear, enable DEPTH_TEST, CULL_FACE, CCW, frontface CCW, cullFace BACK on the webgl context to clear canvas and set presets
 2. Write the vertex and fragment shaders text
 3. Create the shader objects in webgl and assign shaderSources as the text we created in step 1.
 Compile the shaders
@@ -18,3 +18,4 @@ Set the attribute pointer to the required buffers, so that the buffer data will 
 8. ```enableVertexAttribArray``` for all the above attributes
 9. Tell webgl to use the program by ```useProgram``` command
 10. Use ```drawArrays``` command to draw the triangle arrays
+
